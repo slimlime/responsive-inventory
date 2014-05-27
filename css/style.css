@@ -5,6 +5,9 @@
 img {
 	width:100%;
 }
+.inventory h1, .inventory h2, .inventory h3, .inventory h4, .inventory h5, .inventory h6 {
+	font-weight: 700;
+}
 header.inventory-main .nav a {
 	text-transform: uppercase;
 	font-size: .9em;
@@ -36,7 +39,7 @@ header.vehicle-header .price h4 {
 	margin-top:.2em;
 }
 header.vehicle-header .price h2 {
-	font-weight: 600;
+	font-weight: 700;
 	font-size:3.2em;
 	line-height:1em;
 	margin-bottom:0;
@@ -54,7 +57,7 @@ form.enquiry-form {
 	padding:10px 15px;
 }
 form.enquiry-form h4 {
-	font-weight: 600;
+	font-weight: 700;
 }
 form.enquiry-form label.inline {
 	float: left;
@@ -93,19 +96,19 @@ form.enquiry-form [type="submit"]{
 	border-top:0px;
 } 
 #vehicle-details table tbody tr td:first-child {
-	font-weight: 600;
+	font-weight: 700;
 }
 #cta-buttons {
 	margin-top:1em;
 }
 #cta-buttons a {
 	font-size:0.8em;
-	font-weight: 600;
+	font-weight: 700;
 	text-transform: uppercase;
 	white-space: inherit;
 }
 #details-tabs a {
-	font-weight: 600;
+	font-weight: 700;
 }
 .back-link {
 	font-size:0.8em;
@@ -206,19 +209,19 @@ section.search-results {
 }
 .vehicle-item .vehicle-info h3 {
 	margin-top: .25em;
-	font-weight: 600;
+	font-weight: 700;
 }
 .vehicle-item div.price h2 {
 	margin-top: 0;
 	margin-bottom:0;
-	font-weight: 600;
+	font-weight: 700;
 }
 .vehicle-item div.price h4 {
 	margin-top: 0;
 }
 .vehicle-price a.btn {
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 700;
 }
 .vehicle-specs {
 	padding:0;
@@ -250,6 +253,8 @@ section.search-results {
 }
 .search-results-grid .cta-key-values h4 {
 	font-size: 1em;
+	line-height: .75em;
+	margin-bottom: 1em;
 }
 .search-results-grid .cta-key-values .key-value i {
 	display:inline-block;
@@ -311,6 +316,9 @@ div.carousel-caption {
 }
 .similar-vehicles .similar-vehicle:nth-child(even){
 	background-color: rgba(0,0,0,.1);	
+}
+header.inventory-main h3 small {
+	white-space: nowrap;
 }
 @media (min-width: 750px) {
 	header.inventory-main .header-nav {
