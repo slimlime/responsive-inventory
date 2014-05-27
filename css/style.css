@@ -343,7 +343,10 @@ header.inventory-main h3 small {
 	#contact-map-panel iframe {
 		min-height: 228px;
 	}
-
+	header.vehicle-header {
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
 }
 @media (min-width: 960px) {
 	.cta-key-values .panel-content i {
@@ -460,10 +463,20 @@ header.inventory-main h3 small {
 	#top-nav ul li {
 		border-bottom: 1px solid rgba(0,0,0,.1);
 	}
+	div.carousel-caption {
+		font-size:0.8em;
+	}
+	.search-results-grid .cta-key-values h4 {
+		margin-bottom: 0.5em;
+	}
 }
+@media (max-width: 960px) and (min-width: 750px) {
 
-
-
+	.search-results-grid .cta-key-values .key-value h4 {
+		font-size: 0.9em;
+		line-height: 1em;
+	}
+}
 /* EXTRA ICONS */
 .fa-steering-wheel img, .fa-engine img, .fa-odo img, .fa-trans img, .fa-petrol img, .fa .svg {
 	height:1em;
