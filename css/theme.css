@@ -7,8 +7,6 @@ header.inventory-main a {
 header.inventory-main {
 	/*background-color: #a2a4a6;
 	color:#FFF;*/
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
 }
 header.inventory-main h3 {
 	color:#626466;
@@ -19,6 +17,8 @@ form.enquiry-form {
 header.vehicle-header {
 	background:#f0f0f0;
 	border-color: #ccc;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 }
 div#gallery-and-form {
 	background:#f0f0f0;
