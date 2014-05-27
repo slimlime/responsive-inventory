@@ -451,6 +451,15 @@ header.inventory-main h3 small {
 		padding-bottom:1em;
 		border-bottom:1px dotted rgba(0,0,0,.2);
 	}
+	header.inventory-main h3 small {
+		display:inherit;
+	}
+	#top-nav {
+		margin-left:0px;
+	}
+	#top-nav ul li {
+		border-bottom: 1px solid rgba(0,0,0,.1);
+	}
 }
 
 
