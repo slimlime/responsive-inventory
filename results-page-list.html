@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Inventory Template - Search Results List Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <header class="inventory-main row">
+          <div class="col-sm-4">
+            
+            <h3>Search Results <small>(4 Vehicles Found)</small></h3>
+          </div>
+          <div class="col-sm-8">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="top-nav">
+                <ul class="nav navbar-nav navbar-right header-nav">
+                  <li><a href="#" class="back-link"><i class="fa fa-arrow-circle-left"></i> Back to search</a></li>
+                  <li><a href="#"><i class="fa fa-search"></i> New Search</a></li>
+                  <li><a href="#"><i class="fa fa-star"></i> Go To My List</a></li>
+                </ul>
+              </div>
+
+          </div>
+        </header>
+      <div class="row view-options">
+        <div class="col-sm-8">
+          <ul class="nav">
+            <li class="disabled"><a href="#" class="pull-left" disabled="disabled"><i class="fa fa-list-ul"></i> List View</a></li>
+            <li><a href="#" class="pull-left"><i class="fa fa-th"></i> Grid View</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 view-selects">
+            <select>
+              <option selected>Sort By ...</option>
+            </select>
+            <select>
+              <option selected>Per Page ...</option>
+            </select>
+        </div>
+      </div>
+      <section class="search-results search-results-list">
+
+        <!-- START VEHICLE LISTING -->
+        <div class="vehicle-item panel panel-default">
+          <header class="vehicle-type panel-heading"><h5>Demonstrator Vehicle</h5></header>
+          <div class="vehicle-data panel-body">
+            <div class="vehicle-thumbnail col-md-4">
+              <div class="banner-wrapper">
+                <img src="img/front.jpg" />
+                <div class="ribbon ribbon-orange">
+                    <div class="banner">
+                        <div class="text">SALE BANNER!</div>
+                    </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block"><i class="fa fa-camera"></i>  View more details</a>
+            </div>
+            <div class="vehicle-info col-md-8">
+              <div class="col-md-9">
+                <h3>2011 Toyota Aurion GSV40R AT-X</h3>
+              </div>
+              <div class="vehicle-price col-md-3">
+                <div class="price">
+                  <h2>$14,690</h2>
+                  <h4>Drive Away</h4>
+                  <h5>Was<br/><strong><del>$15,990</del></strong></h5>
+                </div>
+                <a href="#" class="btn btn-block btn-warning">Enquire Now <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+              <div class="col-sm-9 vehicle-specs">
+                <div class="cta-key-values">
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-odo"><img src="img/icon_dash.svg" class="svg" /></i> 134,310<br/>kms</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-trans"><img src="img/icon_transmission.svg" class="svg" /></i> 6 Speed Automatic</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-engine"><img src="img/icon_engine.svg" class="svg" /></i> 3.5L<br/>6 Cylinder</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-petrol"><img src="img/icon_petrol.svg" class="svg" /></i> 9.9L <br/>/ 100km</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 vehicle-summary">
+                <i class="fa fa-quote-left"></i>
+                <p>Popular V6 sedan with rear spoiler and alloy wheels this car will not last long at all As part of Australia's largest automotive group we only keep the best of <a href="#" class="primary">... Read More</a></p>
+
+                <a href="#" class="btn btn-warning"><i class="fa fa-star-o"></i> Save To My List</a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- END VEHICLE LISTING -->
+
+        <!-- START VEHICLE LISTING -->
+        <div class="vehicle-item panel panel-default">
+          <header class="vehicle-type panel-heading"><h5>Demonstrator Vehicle</h5></header>
+          <div class="vehicle-data panel-body">
+            <div class="vehicle-thumbnail col-md-4">
+              <div class="banner-wrapper">
+                <img src="img/front.jpg" />
+                <!--<div class="ribbon ribbon-green">
+                    <div class="banner">
+                        <div class="text">SALE BANNER!</div>
+                    </div>
+                </div>-->
+              </div>
+              <a href="#" class="btn btn-primary btn-block"><i class="fa fa-camera"></i>  View more details</a>
+            </div>
+            <div class="vehicle-info col-md-8">
+              <div class="col-md-9">
+                <h3>2011 Toyota Aurion GSV40R AT-X</h3>
+              </div>
+              <div class="vehicle-price col-md-3">
+                <div class="price">
+                  <h2>$14,690</h2>
+                  <h4>Drive Away</h4>
+                  <h5>Was<br/><strong><del>$15,990</del></strong></h5>
+                </div>
+                <a href="#" class="btn btn-block btn-warning">Enquire Now <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+              <div class="col-sm-9 vehicle-specs">
+                <div class="cta-key-values">
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-odo"><img src="img/icon_dash.svg" class="svg" /></i> 134,310<br/>kms</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-trans"><img src="img/icon_transmission.svg" class="svg" /></i> 6 Speed Automatic</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-engine"><img src="img/icon_engine.svg" class="svg" /></i> 3.5L<br/>6 Cylinder</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-petrol"><img src="img/icon_petrol.svg" class="svg" /></i> 9.9L <br/>/ 100km</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 vehicle-summary">
+                <i class="fa fa-quote-left"></i>
+                <p>Popular V6 sedan with rear spoiler and alloy wheels this car will not last long at all As part of Australia's largest automotive group we only keep the best of <a href="#" class="primary">... Read More</a></p>
+
+                <a href="#" class="btn btn-warning"><i class="fa fa-star-o"></i> Save To My List</a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- END VEHICLE LISTING -->
+
+        <!-- START VEHICLE LISTING -->
+        <div class="vehicle-item panel panel-default">
+          <header class="vehicle-type panel-heading"><h5>Demonstrator Vehicle</h5></header>
+          <div class="vehicle-data panel-body">
+            <div class="vehicle-thumbnail col-md-4">
+              <div class="banner-wrapper">
+                <img src="img/front.jpg" />
+                <div class="ribbon ribbon-red">
+                    <div class="banner">
+                        <div class="text">SALE BANNER!</div>
+                    </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block"><i class="fa fa-camera"></i>  View more details</a>
+            </div>
+            <div class="vehicle-info col-md-8">
+              <div class="col-md-9">
+                <h3>2011 Toyota Aurion GSV40R AT-X</h3>
+              </div>
+              <div class="vehicle-price col-md-3">
+                <div class="price">
+                  <h2>$14,690</h2>
+                  <h4>Drive Away</h4>
+                  <h5>Was<br/><strong><del>$15,990</del></strong></h5>
+                </div>
+                <a href="#" class="btn btn-block btn-warning">Enquire Now <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+              <div class="col-sm-9 vehicle-specs">
+                <div class="cta-key-values">
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-odo"><img src="img/icon_dash.svg" class="svg" /></i> 134,310<br/>kms</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-trans"><img src="img/icon_transmission.svg" class="svg" /></i> 6 Speed Automatic</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-engine"><img src="img/icon_engine.svg" class="svg" /></i> 3.5L<br/>6 Cylinder</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-petrol"><img src="img/icon_petrol.svg" class="svg" /></i> 9.9L <br/>/ 100km</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 vehicle-summary">
+                <i class="fa fa-quote-left"></i>
+                <p>Popular V6 sedan with rear spoiler and alloy wheels this car will not last long at all As part of Australia's largest automotive group we only keep the best of <a href="#" class="primary">... Read More</a></p>
+
+                <a href="#" class="btn btn-warning"><i class="fa fa-star-o"></i> Save To My List</a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- END VEHICLE LISTING -->
+
+        <!-- START VEHICLE LISTING -->
+        <div class="vehicle-item panel panel-default">
+          <header class="vehicle-type panel-heading"><h5>Demonstrator Vehicle</h5></header>
+          <div class="vehicle-data panel-body">
+            <div class="vehicle-thumbnail col-md-4">
+              <div class="banner-wrapper">
+                <img src="img/front.jpg" />
+                <div class="ribbon ribbon-green">
+                    <div class="banner">
+                        <div class="text">SALE BANNER!</div>
+                    </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-block"><i class="fa fa-camera"></i>  View more details</a>
+            </div>
+            <div class="vehicle-info col-md-8">
+              <div class="col-md-9">
+                <h3>2011 Toyota Aurion GSV40R AT-X</h3>
+              </div>
+              <div class="vehicle-price col-md-3">
+                <div class="price">
+                  <h2>$14,690</h2>
+                  <h4>Drive Away</h4>
+                  <h5>Was<br/><strong><del>$15,990</del></strong></h5>
+                </div>
+                <a href="#" class="btn btn-block btn-warning">Enquire Now <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+              <div class="col-sm-9 vehicle-specs">
+                <div class="cta-key-values">
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-odo"><img src="img/icon_dash.svg" class="svg" /></i> 134,310<br/>kms</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-trans"><img src="img/icon_transmission.svg" class="svg" /></i> 6 Speed Automatic</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-engine"><img src="img/icon_engine.svg" class="svg" /></i> 3.5L<br/>6 Cylinder</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="panel panel-primary key-value">
+                    <div class="panel-content">
+                      <h4><i class="fa fa-petrol"><img src="img/icon_petrol.svg" class="svg" /></i> 9.9L <br/>/ 100km</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 vehicle-summary">
+                <i class="fa fa-quote-left"></i>
+                <p>Popular V6 sedan with rear spoiler and alloy wheels this car will not last long at all As part of Australia's largest automotive group we only keep the best of <a href="#" class="primary">... Read More</a></p>
+
+                <a href="#" class="btn btn-warning"><i class="fa fa-star-o"></i> Save To My List</a>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- END VEHICLE LISTING -->
+
+      </section>
+      <footer class="row main">
+        <div class="col-sm-12">
+          <ul class="nav">
+            <li><a href="#" class="pull-left"><i class="fa fa-arrow-circle-left"></i> Back to search results</a></li>
+            <li><a href="#" class="pull-left"><i class="fa fa-star"></i> Go to my list</a></li>
+            <li><a href="#" class="pull-right">Back to top <i class="fa fa-arrow-circle-up"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12 footer-text">
+          <p><small>Dealer Inventory by <a href="#">Dealer Solutions</a>.  </br>Data By RedBook ©. All Rights Reserved.</small></p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- custom scripts -->
+    <script src="js/responsive-tabs.js"></script>
+    <script type="text/JavaScript" src="js/main.js"></script>
+  </body>
+</html>

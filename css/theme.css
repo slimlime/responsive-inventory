@@ -1,0 +1,70 @@
+/* THEMING STYLES */
+
+
+header.inventory-main a {
+	/*color:#FFF;*/
+}
+header.inventory-main {
+	/*background-color: #a2a4a6;
+	color:#FFF;*/
+}
+header.inventory-main h3, header.inventory-main h3 small {
+	/*color:#FFF;*/
+}
+form.enquiry-form {
+	background-color:#dfdfdf;
+}
+header.vehicle-header {
+	background:#f0f0f0;
+	border-color: #ccc;
+}
+div#gallery-and-form {
+	background:#f0f0f0;
+	border-color: #ccc;
+	padding-top:2em;
+}
+.highlight-link {
+	color:#f0ad4e;
+}
+.highlight-div {
+	color:#FFF;
+	background-color:#f0ad4e;
+}
+.primary-color-div {
+	color:#FFF;
+	background-color: #626466!important;
+}
+header.inventory-main .nav a:hover {
+	background-color: rgba(0,0,0,.35);
+	color: #FFF;
+}	
+#cta-key-values {
+	background:#dfdfdf;
+}
+#cta-key-values .panel-content h4 {
+	color:#428bca;
+}
+.vehicle-item.panel {
+	border-color: #626466;
+}
+.vehicle-item .panel-heading {
+	background-color:#626466;
+	color:#FFF;
+}
+.vehicle-item .panel-heading.panel-primary {
+	background-color: #428bca;
+} 
+.similar-vehicle {
+	border-right: 1px dotted rgba(0,0,0,.2);
+}
+.similar-vehicle:nth-child(4n) {
+	border-right:0px;
+}
+.fa, .fa path {
+	fill:#000;
+	stroke:#000;
+}
+.fa .white path {
+	fill:#FFF;
+	stroke:#FFF;
+}

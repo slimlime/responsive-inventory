@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Inventory Template - Vehicle Detail Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <header class="inventory-main row">
+          <div class="col-sm-4">
+            
+            <h3>Demonstrator Vehicle</h3>
+          </div>
+          <div class="col-sm-8">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="top-nav">
+                <ul class="nav navbar-nav navbar-right header-nav">
+                  <li><a href="#"><i class="fa fa-arrow-circle-left"></i> Back to search</a></li>
+                  <li><a href="#"><i class="fa fa-search"></i> New Search</a></li>
+                  <li><a href="#"><i class="fa fa-star"></i> Go To My List</a></li>
+                  <li><a href="#" class="highlight-link"><i class="fa fa-star-o"></i> Save To My List</a></li>
+                </ul>
+              </div>
+
+          </div>
+        </header>
+      <!--<div class="row vehicle-pagination">
+          <ul class="nav">
+            <li><a href="#" class="disabled pull-left"><i class="fa fa-angle-double-left"></i> Previous Vehicle</a></li>
+            <li><a href="#" class="pull-right">Next Vehicle <i class="fa fa-angle-double-right"></i></a></li>
+          </ul>
+      </div>-->
+      <section class="vehicle-details">
+        <header class="vehicle-header row primary-color-div">
+          <div class="col-sm-8">
+            <h1>2011 Toyota Aurion GSV40R AT-X</h1>
+            
+          </div>
+          <div class="col-sm-4">
+            <div class="price">
+              <h2>$14,690</h2>
+              <h4>Drive Away</h4>
+              <h5><strong>Was</strong><br/><del>$15,990</del></h5>
+            </div>
+          </div>
+        </header>
+      <div class="row" id="gallery-and-form">
+          <div class="col-md-6">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div class="ribbon ribbon-orange ribbon-large">
+                  <div class="banner">
+                      <div class="text">SALE BANNER!</div>
+                  </div>
+              </div>
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" src="img/front.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" src="img/back.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" src="img/interior.jpg" alt="Third slide">
+                </div>
+              </div>
+              <div class="carousel-caption">
+                10 Images Available
+              </div>
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+
+            <div class="btn-group btn-group-justified" id="cta-buttons">
+              <a class="btn btn-default btn-primary" role="button"><i class="fa fa-dollar"></i> Finance This Vehicle</a>
+              <a class="btn btn-default btn-primary" role="button"><i class="fa fa-steering-wheel"><img src="img/icon_steer.svg" class="svg white" /></i> Book A Test Drive</a>
+              <a class="btn btn-default btn-primary" role="button"><i class="fa fa-print"></i> Print Brochure</a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--<form class="form enquiry-form" role="form">
+              <h4>Enquire About This Car Today!</h4>
+              <div class="form-group">
+                <label class="inline" for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="inline" for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="inline" for="phone">Phone:</label>
+                <input type="phone" class="form-control" id="phone" placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="inline" for="enquiry">Enquiry:</label>
+                <textarea type="email" class="form-control" id="enquiry" placeholder=""></textarea>
+              </div>
+              <div class="form-horizontal">
+                <div class="form-group">
+                  <label class="control-label col-sm-6">Do you have a car to trade?</label>
+                  <div class="col-sm-6">
+                    <label class="radio-inline">
+                      <input type="radio" id="trade-yes" name="trade" value="Yes"> Yes
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" id="trade-yes" name="trade" value="No"> No
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="captcha" class="control-label col-sm-6">Anti-Spam?</label>
+                  <div class="col-sm-6">
+                    <input type="phone" class="form-control" style="border-radius:0px;background:#DDD;" placeholder="[CAPTCHA PLACE HOLDER]">
+                  </div>
+                </div>
+                <div class="form-group">  
+                  <label for="captcha" class="control-label col-sm-6">Enter the text shown above:</label>
+                  <div class="col-sm-6">
+                    <input type="phone" class="form-control" id="captcha-text" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Send My Enquiry &nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+              </div>
+            </form>-->
+            <div class="cta-key-values">
+              <div class="col-sm-3">
+                <div class="panel panel-primary key-value">
+                  <div class="panel-content">
+                    <h4><i class="fa fa-odo"><img src="img/icon_dash.svg" class="svg" /></i> 134,310<br/>kms</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="panel panel-primary key-value">
+                  <div class="panel-content">
+                    <h4><i class="fa fa-trans"><img src="img/icon_transmission.svg" class="svg" /></i> 6 Speed <br/>Automatic</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="panel panel-primary key-value">
+                  <div class="panel-content">
+                    <h4><i class="fa fa-engine"><img src="img/icon_engine.svg" class="svg" /></i> 3.5L<br/>6 Cylinder</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="panel panel-primary key-value">
+                  <div class="panel-content">
+                    <h4><i class="fa fa-petrol"><img src="img/icon_petrol.svg" class="svg" /></i> 9.9L <br/>/ 100km</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="btn btn-primary btn-block cta">
+                  <i class="fa fa-phone"></i>
+                  <h5>Call Us On</h5>
+                  <h3>(01) 2345 6789</h3>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="btn btn-primary btn-block cta">
+                  <i class="fa fa-envelope"></i>
+                    <h5>Enquire Now By</h5>
+                    <h2>EMAIL</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      
+
+
+        <div class="row" id="details-and-similar">
+          <div class="col-md-6">
+            <ul class="nav nav-tabs responsive nav-primary" id="details-tabs">
+              <li class="active"><a href="#vehicle-details" data-target="#vehicle-details" data-toggle="tab">Vehicle Details</a></li>
+              <li><a href="#vehicle-features" data-target="#vehicle-features" data-toggle="tab">Vehicle Features</a></li>
+              <li><a href="#dealer-summary" data-target="#dealer-summary" data-toggle="tab">Dealer Summary</a></li>
+            </ul>
+
+            <div id="details-table" class="tab-content responsive">
+              <div id="vehicle-details" class="tab-pane fade active in">
+                <table class="table table-striped">
+                  <tr>
+                    <td>Vehicle</td>
+                    <td>2013 Toyota Aurion GSV50R AT-X Diamond White 6 Speed Automatic Sedan</td>
+                  </tr>
+                  <tr>
+                    <td>Colour </td>
+                    <td>Diamond White</td>
+                  </tr>
+                  <tr>
+                    <td>Doors</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>Doors</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>Cylinders</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>Fuel Type</td>
+                    <td>Petrol - Unleaded</td>
+                  </tr>
+                  <tr>
+                    <td>Capacity</td>
+                    <td>3.5</td>
+                  </tr>
+                  <tr>
+                    <td>Transmission</td>
+                    <td>6 Speed Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>Odometer</td>
+                    <td>19808</td>
+                  </tr>
+                  <tr>
+                    <td>Drive Type</td>
+                    <td>FWD</td>
+                  </tr>
+                  <tr>
+                    <td>Rego</td>
+                    <td>CQG-85G</td>
+                  </tr>
+                  <tr>
+                    <td>VIN</td> 
+                    <td>6T1BK3FK50X237121</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="vehicle-features" class="tab-pane fade">
+                <table class="table table-striped">
+                  <tr>
+                  <td>12V Sockets - Auxiliary</td>
+                  <td>Door Pockets - 2nd row (rear)</td>
+                  </tr><tr>
+                  <td>16" Alloy Wheels</td>
+                  <td>EBD (Electronic Brake Force Distribution)</td>
+                  </tr><tr>
+                  <td>6 Speaker Stereo</td>
+                  <td>Electric Seat - Drivers</td>
+                  </tr><tr>
+                  <td>ABS (Antilock Brakes)</td>
+                  <td>Engine Immobiliser</td>
+                  </tr><tr>
+                  <td>Adjustable Steering Col. - Tilt & Reach</td>
+                  <td>Exhaust - Stainless Steel Dual System</td>
+                  </tr><tr>
+                  <td>Air Cond. - Climate Control 2 Zone</td>
+                  <td>Headlamps Automatic (light sensitive)</td>
+                  </tr><tr>
+                  <td>Air Conditioning - Rear</td>
+                  <td>Headrests - Adjustable 1st Row (Front)</td>
+                  </tr><tr>
+                  <td>Airbag - Knee Driver</td>
+                  <td>Headrests - Integrated 2nd Row</td>
+                  </tr><tr>
+                  <td>Airbags - Driver & Passenger (Dual)</td>
+                  <td>Illuminated - Entry/Exit with Fade</td>
+                  </tr><tr>
+                  <td>Airbags - Head for 1st Row Seats (Front)</td>
+                  <td>Independent Front Suspension</td>
+                  </tr><tr>
+                  <td>Airbags - Head for 2nd Row Seats</td>
+                  <td>Intermittent Wipers - Variable</td>
+                  </tr><tr>
+                  <td>Airbags - Side for 1st Row Occupants (Front)</td>
+                  <td>Laminated Windscreen</td>
+                  </tr><tr>
+                  <td>Alarm - Personal Safety (Panic)</td>
+                  <td>Map/Reading Lamps - for 1st Row</td>
+                  </tr><tr>
+                  <td>Armrest - Rear Centre (Shared)</td>
+                  <td>Metallic Finish Centre Console</td>
+                  </tr><tr>
+                  <td>Audio - Aux Input Socket (MP3/CD/Cassette)</td>
+                  <td>Metallic Finish Dash Board</td>
+                  </tr><tr>
+                  <td>Audio - Aux Input USB Socket</td>
+                  <td>Metallic Finish Door Inserts</td>
+                  </tr><tr>
+                  <td>Audio - Input for iPod</td>
+                  <td>Metallic Finish Inserts</td>
+                  </tr><tr>
+                  <td>Audio - MP3 Decoder</td>
+                  <td>Multi-function Control Screen - Colour</td>
+                  </tr><tr>
+                  <td>Bluetooth System</td>
+                  <td>Multi-function Steering Wheel</td>
+                  </tr><tr>
+                  <td>Body Colour - Bumpers</td>
+                  <td>Park Brake - Foot Operated</td>
+                  </tr><tr>
+                  <td>Body Colour - Door Handles</td>
+                  <td>Power Door Mirrors</td>
+                  </tr><tr>
+                  <td>Body Colour - Exterior Mirrors Partial</td>
+                  <td>Power Steering - Electric Assist</td>
+                  </tr><tr>
+                  <td>Bottle Holders - 1st Row</td>
+                  <td>Power Windows - Front & Rear</td>
+                  </tr><tr>
+                  <td>Bottle Holders - 2nd Row</td>
+                  <td>Rear View Mirror - Manual Anti-Glare</td>
+                  </tr><tr>
+                  <td>Brake Assist</td>
+                  <td>Remote Boot/Hatch Release</td>
+                  </tr><tr>
+                  <td>CD Player</td>
+                  <td>Remote Fuel Lid Release</td>
+                  </tr><tr>
+                  <td>Camera - Rear Vision</td>
+                  <td>Seat - Driver with Electric Lumbar</td>
+                  </tr><tr>
+                  <td>Central Locking - Once Mobile</td>
+                  <td>Seat - Height Adjustable Driver</td>
+                  </tr><tr>
+                  <td>Central Locking - Remote/Keyless</td>
+                  <td>Seatback Pockets - 1st Row (Front) seats</td>
+                  </tr><tr>
+                  <td>Chrome Door Handles - Interior</td>
+                  <td>Seatbelt - Adjustable Height 1st Row</td>
+                  </tr><tr>
+                  <td>Chrome Grille</td>
+                  <td>Seatbelt - Load Limiters 1st Row (Front)</td>
+                  </tr><tr>
+                  <td>Chrome Rear Garnish</td>
+                  <td>Seatbelt - Pretensioners 1st Row (Front)</td>
+                  </tr><tr>
+                  <td>Clock - Digital</td>
+                  <td>Seatbelts - Lap/Sash for 5 seats</td>
+                  </tr><tr>
+                  <td>Control - Electronic Stability</td>
+                  <td>Seats - 2nd Row Split Fold</td>
+                  </tr><tr>
+                  <td>Control - Traction</td>
+                  <td>Storage Compartment - Centre Console 1st Row</td>
+                  </tr><tr>
+                  <td>Cruise Control</td>
+                  <td>Sunglass Holder</td>
+                  </tr><tr>
+                  <td>Cup Holders - 1st Row</td>
+                  <td>Sunvisor - Illuminated Vanity Mirrors Dual</td>
+                  </tr><tr>
+                  <td>Cup Holders - 2nd Row</td>
+                  <td>Tacho</td>
+                  </tr><tr>
+                  <td>Disc Brakes Front Ventilated</td>
+                  <td>Trim - Cloth</td>
+                  </tr><tr>
+                  <td>Disc Brakes Rear Solid</td>
+                  <td>Trip Computer</td>
+                  </tr><tr>
+                  <td>Door Pockets - 1st row (Front)</td>
+                  <td></td>
+                  </tr>
+                </table>
+              </div>
+              <div id="dealer-summary" class="tab-pane fade">
+                <table class="table table-striped">
+                  <tr>
+                    <td><strong>Demonstrator Vehicle.</strong>  This Toyota Aurion AT-X Automatic sedan comes standard with outstanding safety features including Active Braking with intelligence and Traction control, Rear View Camera, and is one of the most powerful Aussie built sedans on the market. Come in today and test drive one for yourself.</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="panel-group" id="contact-map">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#contact-map" href="#contact-map-panel" class="accordion-toggle">
+                      Contact Us
+                    </a>
+                  </h4>
+                </div>
+              <div id="contact-map-panel" class="panel-collapse collapse in">
+                  <div class="panel-body row">
+                    <div class="col-sm-12">
+                      <dl>
+                        <dt>Ken Mills Toyota (Nambour)</dt>
+                        <dd>107 Coronation Drive</dd>
+                        <dd>Nambour, QLD, 4560</dd>
+                        <dd>Phone: (07) 5441 1544</dd>
+                        <dd>Email Us: <a href="#">Click Here</a></dd>
+                      </dl>
+
+                      <dl>
+                        <dt>Ken Mills Toyota (Maroochydore)</dt>
+                        <dd>82 Sugar Road</dd>
+                        <dd>Maroochydore, QLD 4558</dd>
+                        <dd>Phone: (07) 5443 6277</dd>
+                        <dd>Email Us: <a href="#">Click Here</a></dd>
+                      </dl>
+                      
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3566.9871387731278!2d152.9680754!3d-26.616859!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9379a8241a25cd%3A0xe4322f15a29672a6!2s107+Coronation+Ave!5e0!3m2!1sen!2s!4v1401084229295" width="100%" frameborder="0" style="border:0"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="panel-group col-md-12" id="similar-vehicles">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#similar-vehicles" href="#similar-vehicles-panel" class="accordion-toggle">
+                      Similar Vehicles
+                    </a>
+                  </h4>
+                </div>
+              <div id="similar-vehicles-panel" class="panel-collapse collapse in">
+                  <div class="panel-body row">
+                    
+                    <div class="col-sm-3 similar-vehicle">
+                        <img src="img/hyundai.jpg" />
+                        <h5>2006 Hyundai Grandeur TG Sedan</h5>
+                        <p>2006 Hyundai Grandeur TG Sedan, Used Hyundai Grandeur.</p>
+                        <h4>$9,999.00</h4>
+                        <a class="btn btn-primary btn-xs"><i class="fa fa-search"></i> More Details</a>
+                    </div>
+                    <div class="col-sm-3 similar-vehicle">
+                        <img src="img/falcon-green.jpg" />
+                        <h5>2006 Ford Falcon BF Sedan</h5>
+                        <p>2006 Ford Falcon BF Sedan, Used Ford Falcon.</p>
+                        <h4>$8,999.00</h4>
+                        <a class="btn btn-primary btn-xs"><i class="fa fa-search"></i> More Details</a>
+                    </div>
+                    <div class="col-sm-3 similar-vehicle">
+                        <img src="img/commodore.jpg" />
+                        <h5>2009 Holden Commodore VE MY09.5 Sedan</h5>
+                        <p>2009 Holden Commodore VE MY09.5 Sedan, Used Holden Commodore.</p>
+                        <h4>$16,945.01</h4>
+                        <a class="btn btn-primary btn-xs"><i class="fa fa-search"></i> More Details</a>
+                    </div>
+                    <div class="col-sm-3 similar-vehicle">
+                        <img src="img/falcon-silver.jpg" />
+                        <h5>2012 Ford Falcon FG MkII Sedan</h5>
+                        <p>2012 Ford Falcon FG MkII Sedan, Used Ford Falcon.</p>
+                        <h4>$17,945.00</h4>
+                        <a class="btn btn-primary btn-xs"><i class="fa fa-search"></i> More Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </section>
+      <footer class="row main">
+        <div class="col-sm-12">
+          <ul class="nav">
+            <li><a href="#" class="pull-left"><i class="fa fa-arrow-circle-left"></i> Back to search results</a></li>
+            <li><a href="#" class="pull-left"><i class="fa fa-star"></i> Go to my list</a></li>
+            <li><a href="#" class="pull-right">Back to top <i class="fa fa-arrow-circle-up"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12 footer-text">
+          <p><small>Dealer Inventory by <a href="#">Dealer Solutions</a>.  </br>Data By RedBook ©. All Rights Reserved.</small></p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- custom scripts -->
+    <script src="js/responsive-tabs.js"></script>
+    <script type="text/JavaScript" src="js/main.js"></script>
+  </body>
+</html>
