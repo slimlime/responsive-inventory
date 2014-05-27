@@ -8,8 +8,8 @@ header.inventory-main {
 	/*background-color: #a2a4a6;
 	color:#FFF;*/
 }
-header.inventory-main h3, header.inventory-main h3 small {
-	/*color:#FFF;*/
+header.inventory-main h3 {
+	color:#626466;
 }
 form.enquiry-form {
 	background-color:#dfdfdf;
